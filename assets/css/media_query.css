@@ -236,6 +236,10 @@
         padding: 10px 12px;
         justify-content: space-between;
     }
+    
+    .icon-header{
+        display: none;
+    }
     .icon {
         display: none;
     }
@@ -1232,7 +1236,11 @@
         gap: 12px;
         justify-items: center;
     }
-    .headphone-main-coming-soon .icon {
+    .headphone-main-coming-soon 
+    .icon-header{
+        display: none;
+    }
+    .icon {
         display: none;
     }
 }

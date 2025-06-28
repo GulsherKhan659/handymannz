@@ -450,6 +450,16 @@ header {
 .side-menu-footer {
     display: none;
 }
+.icon-header {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background:#98e54f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .icon {
     width: 60px;
     height: 60px;
