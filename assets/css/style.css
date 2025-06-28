@@ -687,7 +687,7 @@ header {
     padding: 100px 0;
 }
 .handyman-text {
-    color: var(--3, #000);
+    color: var(--3, #ffffff);
     font-size: 48px;
     font-weight: 700;
     line-height: 64px;
@@ -731,7 +731,7 @@ header {
     margin-top: 20px;
 }
 .highQulity {
-    color: var(--3, #000);
+    color: var(--3, #ffffff);
     font-size: 24px;
     font-weight: 600;
     line-height: 36px;
@@ -753,7 +753,7 @@ header {
     width: 100%;
 }
 .btn2 {
-    background: #000;
+    background: #ffffff;
 }
 .about-sec-contact-main {
     display: flex;
@@ -792,7 +792,7 @@ header {
 }
 /*-----------------------[ 8.Section Three CSS ]------------------------*/
 .section-three {
-    background: var(--3, #000);
+    background: var(--3, #ffffff);
     padding: 100px 0;
 }
 .handyman-services-textMain {
@@ -939,7 +939,7 @@ header {
     border: 1px solid #ffffff;
 }
 .formDropDown-ul-list a {
-    color: var(--4, #ffffff);
+    color: var(--4, #000);
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
@@ -1019,7 +1019,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--4, #ffffff);
+    color: var(--4, #000);
     font-size: 36px;
     font-weight: 700;
     line-height: 36px;
@@ -1314,7 +1314,7 @@ header {
     margin: 60px 0;
 }
 .calendar-btn {
-    background: #000;
+    background: #ffffff;
 }
 .Appointment-box-sub {
     display: flex;
@@ -1438,7 +1438,7 @@ header {
     align-items: center;
     gap: 30px;
     padding: 15px 0;
-    border-bottom: 2px solid #000;
+    border-bottom: 2px solid #ffffff;
 }
 .tag-date-sub {
     display: flex;
@@ -1452,7 +1452,7 @@ header {
     line-height: 24px;
 }
 .tips {
-    color: var(--3, #000);
+    color: var(--3, #ffffff);
     font-size: 24px;
     font-weight: 600;
     line-height: 36px;
@@ -1462,7 +1462,7 @@ header {
     background-clip: text;
     background-repeat: no-repeat;
     transition: 0.5s ease-out;
-    background-image: linear-gradient(to right, #98e54f 45%, #000 55%);
+    background-image: linear-gradient(to right, #98e54f 45%, #ffffff 55%);
     background-size: 220% 100%;
     background-position: 100% 50%;
 }
@@ -1516,7 +1516,7 @@ header {
     transform: rotate(-90deg);
 }
 .yerOfExperi h2 {
-    color: var(--3, #000);
+    color: var(--3, #ffffff);
     font-size: 64px;
     font-weight: 700;
     line-height: 64px;
@@ -1695,7 +1695,7 @@ footer {
 }
 .copyright-main {
     padding: 15px 0;
-    background: var(--4, #ffffff);
+    background: var(--4, #000);
 }
 .rights-reserved {
     display: flex;
@@ -1819,7 +1819,7 @@ button.bottom-top-button:hover {
     position: relative;
 }
 .tackle {
-    color: var(--3, #000);
+    color: var(--3, #ffffff);
     font-size: 48px;
     font-weight: 400;
     line-height: 64px;
@@ -1835,7 +1835,7 @@ button.bottom-top-button:hover {
     height: 100%;
 }
 .whatWe h3 {
-    color: var(--3, #000);
+    color: var(--3, #ffffff);
     font-size: 32px;
     font-weight: 600;
     line-height: 48px;
@@ -1956,7 +1956,7 @@ left: 15px;
 
 .contact-team-person h2,
 .contact-team-person p {
-    color: var(--3, #000);
+    color: var(--3, #ffffff);
     font-size: 18px;
     font-weight: 500;
     line-height: 30px;
@@ -1982,7 +1982,7 @@ left: 15px;
     position: relative;
 }
 .progress-title {
-    color: var(--3, #000);
+    color: var(--3, #ffffff);
     font-family: Outfit;
     font-size: 18px;
     font-style: normal;
@@ -2024,7 +2024,7 @@ left: 15px;
     width: 0%;
 }
 .Restructuring {
-    color: var(--3, #000);
+    color: var(--3, #ffffff);
     font-size: 18px;
     font-weight: 600;
     line-height: 30px;
@@ -2035,7 +2035,7 @@ left: 15px;
     padding-top: 30px;
 }
 .diamond-btn.next {
-    background: #000;
+    background: #ffffff;
 }
 .diamond-next-btn:hover .diamond-btn.next {
     background: #98e54f;
@@ -2055,7 +2055,7 @@ left: 15px;
     cursor: pointer;
 }
 .diamond-next-btn h4 {
-    color: var(--3, #000);
+    color: var(--3, #ffffff);
     font-size: 18px;
     font-weight: 600;
     line-height: 30px;
@@ -2075,7 +2075,7 @@ left: 15px;
     margin: 20px 0 60px 0;
 }
 .toggle-label {
-    color: var(--2, #000000);
+    color: var(--2, #ffffff000);
     font-size: 18px;
     font-weight: 500;
     line-height: 30px;
@@ -2124,7 +2124,7 @@ input:checked+.slid-btn:before {
     transform: translateX(30px);
 }
 .plan-header {
-    background: #000;
+    background: #ffffff;
     padding: 30px;
 }
 .plan-text {
@@ -2279,7 +2279,7 @@ input:checked+.slid-btn:before {
     padding-top: 20px;
 }
 .client-detils-box {
-    background: #000;
+    background: #ffffff;
     padding: 30px;
     display: flex;
     align-items: center;
@@ -2556,7 +2556,7 @@ input:checked+.slid-btn:before {
     line-height: 30px;
 }
 .coming-soon-subscribe a:hover {
-    background: #000;
+    background: #ffffff;
 }
 .coming-soon-subscribe-btn {
     position: absolute;
@@ -2587,7 +2587,7 @@ input:checked+.slid-btn:before {
     padding-top: 100px;
 }
 .services-page-text {
-    color: #000;
+    color: #ffffff;
 }
 .tellus {
     color: #ffffff;
@@ -2605,7 +2605,7 @@ input:checked+.slid-btn:before {
     max-width: 100%;
 }
 .interdum {
-    color: var(--3, #000);
+    color: var(--3, #ffffff);
     font-size: 36px;
     font-weight: 600;
     line-height: 48px;
@@ -2630,7 +2630,7 @@ input:checked+.slid-btn:before {
     margin-top: 20px !important;
 }
 .single-services-black-box {
-    background: #000;
+    background: #ffffff;
     padding: 30px;
 }
 .single-services-black-box h3 {
@@ -2663,7 +2663,7 @@ input:checked+.slid-btn:before {
     border-bottom: 2px solid #A8A9AD;
 }
 .ad-box {
-    background: #000;
+    background: #ffffff;
     padding: 30px 30px 40px 30px;
     position: relative;
     overflow: hidden;
@@ -2714,7 +2714,7 @@ input:checked+.slid-btn:before {
     margin-bottom: 20px;
 }
 .brochure-main h3 {
-    color: var(--3, #000);
+    color: var(--3, #ffffff);
     font-size: 20px;
     font-weight: 500;
     line-height: 30px;
@@ -2751,7 +2751,7 @@ input:checked+.slid-btn:before {
     background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.90) 27.86%, rgba(0, 0, 0, 0.00) 100%), url('../images/project-page/header-img.jpg');
 }
 .project-page-heading {
-    color: #000;
+    color: #ffffff;
     width: 100%;
 }
 .project-page-row {
@@ -3089,7 +3089,7 @@ input:checked+.slid-btn:before {
     right: 42px;
 }
 .qoute-box h2 {
-    color: var(--3, #000);
+    color: var(--3, #ffffff);
     font-size: 24px;
     font-weight: 500;
     line-height: 36px;
@@ -3100,7 +3100,7 @@ input:checked+.slid-btn:before {
 }
 .Michel {
     clip-path: polygon(9% 0, 100% 0%, 92% 100%, 0% 100%);
-    background: #000;
+    background: #ffffff;
     text-align: center;
     max-width: 150px;
     color: var(--5, #FFF);
@@ -3201,7 +3201,7 @@ input:checked+.slid-btn:before {
 }
 .contact-deatils-head .CallUs-phone p,
 .contact-deatils-head .CallUs-phone {
-    background-image: linear-gradient(to right, #98e54f 45%, #000 55%);
+    background-image: linear-gradient(to right, #98e54f 45%, #ffffff 55%);
 }
 .contact-deatils-head .CallUs-phone:hover p,
 .CallUs-phone:hover {
