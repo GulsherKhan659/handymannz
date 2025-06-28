@@ -124,7 +124,7 @@ button {
     font-weight: 700;
     text-transform: uppercase;
     animation: loading 0.7s infinite alternate;
-    text-shadow: 2px 2px #000000;
+    text-shadow: 2px 2px #ffffff;
 }
 .loading span:nth-child(2) {
     animation-delay: 0.1s;
@@ -352,7 +352,7 @@ header {
     position: relative;
 }
 .menu-list a {
-    color: var(--4, #222);
+    color: var(--4, #ffffff);
     font-family: Outfit;
     font-size: 18px;
     font-style: normal;
@@ -470,7 +470,7 @@ header {
     justify-content: center;
 }
 .call-info p {
-    color: var(--4, #222);
+    color: var(--4, #ffffff);
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
@@ -724,7 +724,7 @@ header {
     margin-top: 30px;
 }
 .fusce {
-    color: var(--4, #222);
+    color: var(--4, #ffffff);
     font-size: 18px;
     font-weight: 400;
     line-height: 30px;
@@ -738,7 +738,7 @@ header {
     padding: 10px 0;
 }
 .semper {
-    color: var(--4, #222);
+    color: var(--4, #ffffff);
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
@@ -776,7 +776,7 @@ header {
     justify-content: center;
 }
 .call-info-book p {
-    color: var(--4, #222);
+    color: var(--4, #ffffff);
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
@@ -819,7 +819,7 @@ header {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(180deg, rgba(34, 34, 34, 0.00) 0%, #222 100%);
+    background: linear-gradient(180deg, rgba(34, 34, 34, 0.00) 0%, #ffffff 100%);
     pointer-events: none;
 }
 .services-slider-box:hover::before {
@@ -896,14 +896,14 @@ header {
     height: 48px;
     outline: none;
     padding: 12px;
-    color: var(--4, #222);
+    color: var(--4, #ffffff);
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
     width: 100%;
 }
 .input-main input::placeholder {
-    color: #222;
+    color: #ffffff;
 }
 .wrapper {
     width: 100%;
@@ -913,7 +913,7 @@ header {
     position: relative;
     padding: 12px;
     background: rgba(168, 169, 173, 0.1);
-    color: var(--4, #222);
+    color: var(--4, #ffffff);
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
@@ -936,10 +936,10 @@ header {
     top: 5px;
     width: 100%;
     z-index: 5;
-    border: 1px solid #222;
+    border: 1px solid #ffffff;
 }
 .formDropDown-ul-list a {
-    color: var(--4, #222);
+    color: var(--4, #ffffff);
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
@@ -1001,7 +1001,7 @@ header {
     position: relative;
 }
 .steps-box {
-    background: #222222;
+    background: #ffffff222;
     clip-path: polygon(50% 0%, 100% 15%, 100% 85%, 50% 100%, 50% 100%, 0 85%, 0 15%);
     text-align: center;
     padding: 20px;
@@ -1019,7 +1019,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--4, #222);
+    color: var(--4, #ffffff);
     font-size: 36px;
     font-weight: 700;
     line-height: 36px;
@@ -1323,7 +1323,7 @@ header {
     gap: 30px;
 }
 .Appointment-box-sub h3 {
-    color: var(--4, #222);
+    color: var(--4, #ffffff);
     font-size: 18px;
     font-weight: 400;
     line-height: 30px;
@@ -1446,7 +1446,7 @@ header {
     gap: 10px;
 }
 .tag-date-sub p {
-    color: var(--4, #222);
+    color: var(--4, #ffffff);
     font-size: 18px;
     font-weight: 400;
     line-height: 24px;
@@ -1470,7 +1470,7 @@ header {
     background-position: 0% 50%;
 }
 .viverra {
-    color: var(--4, #222);
+    color: var(--4, #ffffff);
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
@@ -1558,7 +1558,7 @@ header {
 }
 #accordionExample .accordion-body {
     padding: 0 0 30px 0;
-    color: var(--4, #222);
+    color: var(--4, #ffffff);
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
@@ -1572,7 +1572,7 @@ header {
 }
 /*-----------------------[ 17.Section Schedule Service CSS ]------------------------*/
 .ScheduleService {
-    background: #222222;
+    background: #ffffff222;
     padding: 10px 0;
     overflow: hidden;
 }
@@ -1695,7 +1695,7 @@ footer {
 }
 .copyright-main {
     padding: 15px 0;
-    background: var(--4, #222);
+    background: var(--4, #ffffff);
 }
 .rights-reserved {
     display: flex;
@@ -1852,7 +1852,7 @@ button.bottom-top-button:hover {
     padding-left: 0;
 }
 .services-box-about-page ul a {
-    color: var(--4, #222);
+    color: var(--4, #ffffff);
     font-size: 20px;
     font-weight: 400;
     line-height: 30px;
@@ -1962,7 +1962,7 @@ left: 15px;
     line-height: 30px;
 }
 .contact-team-person p {
-    color: var(--4, #222);
+    color: var(--4, #ffffff);
     font-weight: 400;
 }
 .contact-team-person p:hover {
@@ -2161,7 +2161,7 @@ input:checked+.slid-btn:before {
     padding: 30px;
 }
 .plan-body ul li {
-    color: var(--4, #222);
+    color: var(--4, #ffffff);
     font-size: 18px;
     font-weight: 400;
     line-height: 40px;
@@ -2272,7 +2272,7 @@ input:checked+.slid-btn:before {
     flex-grow: 1;
 }
 .testimonials-box-sub h2 {
-    color: var(--4, #222);
+    color: var(--4, #ffffff);
     font-size: 18px;
     font-weight: 400;
     line-height: 30px;
@@ -2537,7 +2537,7 @@ input:checked+.slid-btn:before {
     border: none;
     background: #FFF;
     font-size: 18px;
-    color: #222222;
+    color: #ffffff222;
     padding: 10px 20px;
     outline: none;
 }
@@ -2590,7 +2590,7 @@ input:checked+.slid-btn:before {
     color: #000;
 }
 .tellus {
-    color: #222;
+    color: #ffffff;
 }
 .services-page-row {
     gap: 24px 0;
@@ -2644,7 +2644,7 @@ input:checked+.slid-btn:before {
     background: rgba(168, 169, 173, 0.1);
 }
 .single-services-sub-box ul li a {
-    color: var(--4, #222);
+    color: var(--4, #ffffff);
     font-size: 20px;
     font-weight: 500;
     line-height: 30px;
@@ -3007,7 +3007,7 @@ input:checked+.slid-btn:before {
     border-bottom: 2px solid #A8A9AD;
 }
 .Category-main h2 {
-    color: var(--4, #222);
+    color: var(--4, #ffffff);
     font-size: 20px;
     font-weight: 500;
     line-height: 30px;
@@ -3137,7 +3137,7 @@ input:checked+.slid-btn:before {
     outline: none;
     border: none;
     padding: 18px 15px;
-    color: var(--4, #222);
+    color: var(--4, #ffffff);
     font-family: Outfit;
     font-size: 18px;
     font-style: normal;
@@ -3155,13 +3155,13 @@ input:checked+.slid-btn:before {
     margin-bottom: 20px;
 }
 .recent-post-text-main p {
-    color: var(--4, #222);
+    color: var(--4, #ffffff);
     font-size: 14px;
     font-weight: 500;
     line-height: 20px;
 }
 .recent-post-text-main h2 {
-    color: var(--4, #222);
+    color: var(--4, #ffffff);
     font-size: 18px;
     font-weight: 600;
     line-height: 27px;
@@ -3225,7 +3225,7 @@ input:checked+.slid-btn:before {
     padding: 30px;
 }
 #contact-page-form input::placeholder {
-    color: #222;
+    color: #ffffff;
 }
 #contact-page-form input {
     margin-bottom: 20px;
@@ -3234,7 +3234,7 @@ textarea {
     width: 100%;
     height: 120px;
     padding: 15px 20px;
-    color: var(--4, #222);
+    color: var(--4, #ffffff);
     font-size: 18px;
     font-weight: 400;
     line-height: 30px;
@@ -3244,7 +3244,7 @@ textarea {
     resize: none;
 }
 textarea::placeholder {
-    color: #222;
+    color: #ffffff;
 }
 .map-section .curved-section {
     padding: 0;

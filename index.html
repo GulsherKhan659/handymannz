@@ -36,9 +36,9 @@
     
 </a>
 </div>
-<body>
+<body style="background-color: #000 !important;color: #fff !important;">
     <!-- ====================================== Preloader ===================================== -->
-    <div class="page-loader">
+    <div  class="page-loader">
         <img src="assets/images/home-page/loader.gif" alt="loader">
         <div class="loading">
             <span>H</span>
@@ -54,7 +54,7 @@
         </div>
     </div>
     <!-- ====================================== Header ===================================== -->
-      <header  class="header">
+      <header style="background-color: #000 !important;color: #fff !important;"  class="header">
         <div class="small-header">
             <div class="container small-header-sub-main">
                 <div class="small-header-sub">
@@ -90,7 +90,7 @@
            
                     <button class="close-menu d-none"><img src="assets/images/svg/x.svg" alt="x"></button>
                 </div>
-                <ul class="menu-list">
+                <ul style="background-color: #000 !important;color: #fff !important;"  class="menu-list">
                     <li>
                         <a class="conta-home" href="#header">Home</a>
                     </li>
@@ -285,7 +285,7 @@
                             </div>
                             <div class="call-info-book">
                                 <p>Call For Booking</p>
-                                <a href="tel:0273366994">+64 22 637 5002</a>
+                                <a href="tel:0273366994">027 3366 994</a>
                             </div>
                         </div>
                     </div>
@@ -620,43 +620,45 @@
                 <p class="fusce fade_down mt-0">
                     Need a repair, renovation, or installation service? Fill out the form below and get a free, no-obligation estimate from our experienced team.
                 </p>
-                <form class="req-form-main">
+                <form  action="https://formspree.io/f/xdkzywzg" method="POST" class="req-form-main">
+                   <p id="formSuccessMsg" class="alert alert-success d-none mt-3">We will be in touch soon to discuss next steps</p>
+
                     <div class="input-main">
-                        <input type="text" placeholder="Your Name*" name="YourName">
+                        <input type="text" placeholder="Your Name*" name="customer_email_address">
                         <input type="text" placeholder="Email ID*" name="EmailID">
                     </div>
                     <div class="input-main">
-                        <input type="text" placeholder="Phone Number*" name="YourName">
+                        <input type="text" placeholder="Phone Number*" name="customer_phone_number">
                         <div class="wrapper">
                             <div class="formDropDown">Choose Service*
                                 <img class="arrow-icon-form" src="assets/images/svg/down-arrow.svg" alt="arrow-icon-form">
                             </div>
                             <div class="position-relative">
                                 <ul class="formDropDown-ul-list">
-                                    <li><a href="javascript:void(0)">Plumbing Solutions</a></li>
-                                    <li><a href="javascript:void(0)">Roofing Solutions</a></li>
-                                    <li><a href="javascript:void(0)">Carpentry Solutions</a></li>
-                                    <li><a href="javascript:void(0)">Cleaning Solutions</a></li>
-                                    <li><a href="javascript:void(0)">Air Conditioning Solutions</a></li>
-                                    <li><a href="javascript:void(0)">Painting Solutions</a></li>
-                                    <li><a href="javascript:void(0)">Electrical Solutions</a></li>
-                                    <li><a href="javascript:void(0)">Solar Solutions</a></li>
-                                    <li><a href="javascript:void(0)">Welding Solutions</a></li>
+                                    <li><a href="javascript:void(0)">Fencing Service</a></li>
+                                    <li><a href="javascript:void(0)">Roofing Service</a></li>
+                                    <li><a href="javascript:void(0)">Plastering Service</a></li>
+                                    <li><a href="javascript:void(0)">House Watch Service</a></li>
+                                    <li><a href="javascript:void(0)">GIB Stopping Service</a></li>
+                                    <li><a href="javascript:void(0)">Bathroom & Shower Service </a></li>
+                                    
                                 </ul>
                             </div>
                         </div>
                     </div>
+                    <input type="hidden" name="selected_service" id="selected_service">
+
                     <div class="input-main">
-                        <input type="text" placeholder="Your Message*" name="YourMessage">
+                        <input type="text" placeholder="Your Message*" name="customer_message">
                     </div>
                     <div class="Submit">
-                        <a href="#services-page-section" class="btn-main btn2">Submit
+                        <button type="submit" class="btn-main btn2">Submit
                             <span class="arrow-section">
                                 <img class="arrow" src="assets/images/svg/right-arrow-svg.svg" alt="right-arrow-svg">
                             </span>
                             <div class="btn-box-left btn2"></div>
                             <div class="btn-box-right btn2"></div>
-                        </a>
+                        </button>
                     </div>
                 </form>
             </div>
@@ -1191,8 +1193,8 @@
                             </div>
                             <div>
                                 <p class="CallUs">Call Us</p>
-                                <a href="tel:+1(248)3578866" class="CallUs-phone">
-                                    <p>+64 22 637 5002</p>
+                                <a href="tel:0273366994" class="CallUs-phone">
+                                    <p>027 3366 994</p>
                                 </a>
                             </div>
                         </div>
@@ -1241,30 +1243,35 @@
                     </div>
                 </div>
                 <div class="col-xxl-6 col-xl-6 col-lg-6">
-                    <div class="search-box-main" id="contact-page-form">
+                    <form  action="https://formspree.io/f/xanjapjj"
+  method="POST">
+                        <p id="contactSuccessMsg" class="alert alert-success d-none mt-3">Your message has been sent successfully!</p>
+
+                        <div class="search-box-main" id="contact-page-form">
                         <div class="search-input">
-                            <input type="text" placeholder="Your Name*">
+                            <input type="text" name="name" placeholder="Your Name*">
                         </div>
                         <div class="search-input">
-                            <input type="text" placeholder="Your Phone Number*">
+                            <input type="text" name="phone_number"  placeholder="Your Phone Number*">
                         </div>
                         <div class="search-input">
-                            <input type="email" placeholder="Your Email*">
+                            <input type="email" name="email" placeholder="Your Email*">
                         </div>
                         <div class="search-input">
-                            <textarea placeholder="Message Here..."></textarea>
+                            <textarea name="message" placeholder="Message Here..."></textarea>
                         </div>
                         <div class="Submit mb-0">
-                            <a href="#services-page-section" class="btn-main btn2">Contact Us
+                            <button type="submit" class="btn-main btn2">Contact Us
                                 <span class="arrow-section">
                                     <img class="arrow" src="assets/images/svg/right-arrow-svg.svg"
                                         alt="right-arrow-svg">
                                 </span>
                                 <div class="btn-box-left btn2"></div>
                                 <div class="btn-box-right btn2"></div>
-                            </a>
+                            </button>
                         </div>
                     </div>
+                    </form>
                 </div>
             </div>
         </div>
@@ -1326,8 +1333,8 @@
                         </div>
                         <div>
                             <p class="CallUs">Call Us</p>
-                            <a href="tel:+1(248)3578866" class="CallUs-phone">
-                                <p>+64 22 637 5002</p>
+                            <a href="tel:0273366994" class="CallUs-phone">
+                                <p>027 3366 994</p>
                             </a>
                         </div>
                     </div>
@@ -1390,6 +1397,92 @@
     <!-- ====================================== Bottom To Top Button ===================================== -->
     <button class="bottom-top-button"><img src="assets/images/svg/right-arrow-svg.svg" alt="arrow-up"></button>
     <!-- ====================================== Bottom To Top Button End ===================================== -->
+    <!-- jQuery CDN -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- Bootstrap 5 Success Message Placeholder -->
+
+<script>
+$(document).ready(function () {
+    // Handle dropdown selection
+    $('.formDropDown-ul-list li a').on('click', function () {
+        const selectedText = $(this).text().trim();
+        $('.formDropDown').text(selectedText);
+        $('#selected_service').val(selectedText);
+    });
+
+    // Handle form submission
+    $('.req-form-main').on('submit', function (e) {
+        e.preventDefault();
+
+        const form = $(this);
+        const url = form.attr('action');
+
+        $.ajax({
+            type: 'POST',
+            url: url,
+            data: form.serialize(),
+            dataType: 'json',
+            success: function () {
+                // Show success message
+                $('#formSuccessMsg').removeClass('d-none');
+
+                // Reset form
+                form[0].reset();
+
+                // Reset dropdown
+                $('#selected_service').val('');
+                $('.formDropDown').text('Choose Service*');
+
+                // Hide message after 5 sec
+                setTimeout(() => {
+                    $('#formSuccessMsg').addClass('d-none');
+                }, 5000);
+            },
+            error: function (xhr) {
+                alert("There was an error submitting the form.");
+                console.log(xhr.responseText);
+            }
+        });
+    });
+});
+</script>
+<!-- Contact-Form -->
+ <script>
+$(document).ready(function () {
+    $('form[action="https://formspree.io/f/xanjapjj"]').on('submit', function (e) {
+        e.preventDefault();
+
+        const form = $(this);
+        const url = form.attr('action');
+
+        $.ajax({
+            type: 'POST',
+            url: url,
+            data: form.serialize(),
+            dataType: 'json',
+            success: function () {
+                // Show success message
+                $('#contactSuccessMsg').removeClass('d-none');
+
+                // Reset form fields
+                form[0].reset();
+
+                // Hide success message after 5 seconds
+                setTimeout(function () {
+                    $('#contactSuccessMsg').addClass('d-none');
+                }, 5000);
+            },
+            error: function (xhr) {
+                alert("There was an error submitting the form.");
+                console.error(xhr.responseText);
+            }
+        });
+    });
+});
+</script>
+
+
     <script src="assets/javascript/jquery.js"></script>
     <script src="assets/javascript/bootstrap.min.js"></script>
     <script src="assets/javascript/magnific-pop.min.js"></script>
