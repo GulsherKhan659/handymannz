@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Image Comparison Slider</title>
+  <style>
+    
+
+    .image-comparison {
+      position: relative;
+      max-width: 100%;
+      margin: auto;
+      overflow: hidden;
+    }
+
+    .image-comparison__image {
+      width: 100%;
+      display: block;
+    }
+
+    .image-comparison__overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 50%;
+      height: 100%;
+      overflow: hidden;
+    }
+
+    .image-comparison__overlay img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .image-comparison__slider {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      width: 2px;
+      height: 100%;
+      background: #fff;
+      z-index: 10;
+    }
+
+    .image-comparison__thumb {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 40px;
+      height: 40px;
+      background: #0091df;
+      border-radius: 50%;
+      transform: translate(-50%, -50%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 11;
+      color: #fff;
+      box-shadow: 0 0 10px rgba(0,0,0,0.4);
+    }
+
+    .image-comparison input[type="range"] {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      z-index: 20;
+      cursor: ew-resize;
+    }
+
+    .label-before,
+    .label-after {
+      position: absolute;
+      bottom: 10px;
+      padding: 6px 12px;
+      background: rgba(0,0,0,0.5);
+      color: white;
+      font-weight: bold;
+      font-size: 14px;
+    }
+
+    .label-before {
+      left: 10px;
+    }
+
+    .label-after {
+      right: 10px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <div class="image-comparison">
+  <!-- AFTER image -->
+  <img src="assets/images/home-page/work/after-home.jpg" alt="After" class="image-comparison__image" />
+
+  <!-- BEFORE overlay image -->
+  <div class="image-comparison__overlay" id="overlay">
+    <img src="assets/images/home-page/work/before-home.jpg" alt="Before" />
+  </div>
+
+  <!-- slider range -->
+  <input type="range" min="0" max="100" value="50" id="slider">
+
+  <!-- vertical line -->
+  <div class="image-comparison__slider" id="sliderLine"></div>
+
+  <!-- draggable thumb -->
+  <div class="image-comparison__thumb" id="thumb">
+    ⇆
+  </div>
+
+  <!-- Labels -->
+  <div class="label-before">Before</div>
+  <div class="label-after">After</div>
+</div>
+        </div>
+    </div>
+</div>
+
+<script>
+  const slider = document.getElementById('slider');
+  const overlay = document.getElementById('overlay');
+  const sliderLine = document.getElementById('sliderLine');
+  const thumb = document.getElementById('thumb');
+
+  function moveSlider(value) {
+    overlay.style.width = value + '%';
+    sliderLine.style.left = value + '%';
+    thumb.style.left = value + '%';
+  }
+
+  slider.addEventListener('input', function () {
+    moveSlider(this.value);
+  });
+
+  // Init position
+  moveSlider(slider.value);
+</script>
+
+</body>
+</html>

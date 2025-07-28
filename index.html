@@ -11,8 +11,8 @@
 {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
-  "name": "Handymannz",
-  "image": "https://www.handymannz.com/assets/images/logo/logo.jpg",
+  "name": "2Brothers Handyman",
+  "image": "https://www.2Brothers Handyman.com/assets/images/logo/logo.jpg",
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "8 Rata Street, New Lynn",
@@ -22,14 +22,20 @@
     "addressCountry": "NZ"
   },
   "telephone": "+64273366994",
-  "email": "info@handymannz.com",
-  "url": "https://www.handymannz.com/",
+  "email": "info@2Brothers Handyman.com",
+  "url": "https://www.2Brothers Handyman.com/",
   "areaServed": ["Auckland", "New Zealand"],
   "priceRange": "$$",
   "openingHours": "Mo-Fr 09:00-18:00",
   "description": "2 Brothers Handyman is Auckland’s trusted local handyman service. Fast, affordable repairs, installations, and renovations near you."
 }
 </script>
+
+
+
+
+
+<!--  -->
 
     <!-- Favicon and App Icons -->
 <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png">
@@ -47,6 +53,17 @@
     <link rel="stylesheet" href="assets/css/slick.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/media_query.css">
+
+
+
+
+
+
+    <!--  -->
+
+    
+<!--  -->
+ 
 </head>
 <div class="sticky-whatsapp-web d-none d-md-block">
 <a target="_blank" href="https://wa.me/0273366994">
@@ -95,8 +112,8 @@
         <div class="small-header">
             <div class="container small-header-sub-main">
                 <div class="small-header-sub">
-                    <a href="mailto:info@handymannz.com">
-                        <p><img src="assets/images/svg/email.svg" alt="email"> info@handymannz.com</p>
+                    <a href="mailto:info@2Brothers Handyman.com">
+                        <p><img src="assets/images/svg/email.svg" alt="email"> info@2Brothers Handyman.com</p>
                     </a>
                     <p><img src="assets/images/svg/location.svg" alt="location"> 8 Rata Street, New Lynn, Auckland 0600</p>
                 </div>
@@ -222,24 +239,168 @@
     </div>
 </section>
 
+
+<!--  -->
+<!--  -->
+
+<!-- Before & After Slider Section -->
+ <style>
+  .range_img_comparison {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+    overflow: hidden;
+  }
+
+  .range_img_image {
+    width: 100%;
+    display: block;
+  }
+
+  .range_img_overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  .range_img_overlay img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .range_img_slider-line {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 2px;
+    height: 100%;
+    background: #fff;
+    z-index: 10;
+  }
+
+  .range_img_thumb {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 40px;
+    height: 40px;
+    background: #98e54f;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 11;
+    color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.4);
+  }
+
+  .range_img_input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 20;
+    cursor: ew-resize;
+  }
+
+  .range_img_label-before,
+  .range_img_label-after {
+    position: absolute;
+    bottom: 10px;
+    padding: 6px 12px;
+    background: #98e54f;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+  }
+
+  .range_img_label-before {
+    left: 10px;
+  }
+
+  .range_img_label-after {
+    right: 10px;
+  }
+</style>
+
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <div class="quality-main about-qulity-main fade_down my-5">
+            <p class="quality">See Our Before & After Work</p>
+        </div>
+            <div class="range_img_comparison">
+  
+  <img src="assets/images/home-page/work/after-home.png" alt="After" class="range_img_image" />
+  <div class="range_img_label-after">After</div>
+
+  <div class="range_img_overlay" id="range_img_overlay">
+    <img src="assets/images/home-page/work/before-home.png" alt="Before" />
+    
+  <div class="range_img_label-before">Before</div>
+  </div>
+
+  <input type="range" min="0" max="100" value="50" id="range_img_slider" class="range_img_input" />
+
+  <div class="range_img_slider-line" id="range_img_slider_line"></div>
+
+  <div class="range_img_thumb" id="range_img_thumb">⇆</div>
+
+  <!-- Labels -->
+  
+</div>
+
+        </div>
+    </div>
+</div>
+<script>
+  const rangeSlider = document.getElementById('range_img_slider');
+  const rangeOverlay = document.getElementById('range_img_overlay');
+  const rangeLine = document.getElementById('range_img_slider_line');
+  const rangeThumb = document.getElementById('range_img_thumb');
+
+  function updateRangeImgSlider(value) {
+    rangeOverlay.style.width = value + '%';
+    rangeLine.style.left = value + '%';
+    rangeThumb.style.left = value + '%';
+  }
+
+  rangeSlider.addEventListener('input', function () {
+    updateRangeImgSlider(this.value);
+  });
+
+  // Initialize slider on load
+  updateRangeImgSlider(rangeSlider.value);
+</script>
+
+<!--  -->
+<!--  -->
 <!-- ====================================== Section Two ===================================== -->
 <section id="about" class="section-two mb-0 pb-0">
     <div class="container">
         <div class="quality-main about-qulity-main fade_down">
-            <p class="quality">about handymannz</p>
+            <p class="quality">about 2Brothers Handyman</p>
         </div>
         <div class="row">
             <div class="col-xxl-6 col-xl-6 col-lg-6">
                 <h2 class="handyman-text fade_down">Auckland's Go-To Team for Complete Handyman Services</h2>
                 <div class="about-sec-img-main">
-                    <img class="about-sec-img1 img-animation-style1 reveal" src="assets/images/home-page/site-image2.jpg" alt="about-sec-img1">
-                    <img class="about-sec-img2 img-animation-style2 reveal" src="assets/images/about-page/about-sec-img2.jpg" alt="about-sec-img2">
-                    <img class="about-sec-img3 img-animation-style6 reveal" src="assets/images/about-page/about-sec-img3.jpg" alt="about-sec-img3">
+                    <img class="about-sec-img1 img-animation-style1 reveal" src="assets/images/home-page/roofing.jpg" alt="about-sec-img1">
+                    <img class="about-sec-img2 img-animation-style2 reveal" style="border-style: solid; border-color: black; border-width: 6px 0px 6px 6px;" src="assets/images/home-page/fencing.jpg" alt="about-sec-img2">
+
+                    <!-- <img class="about-sec-img3 img-animation-style6 reveal" src="assets/images/home-page/roofing.jpg" alt="about-sec-img3"> -->
                 </div>
             </div>
             <div class="col-xxl-6 col-xl-6 col-lg-6">
                 <p class="fusce fade_down">
-                    At Handymannz, we provide professional, affordable, and reliable handyman services tailored to Auckland residents. With years of experience across all trades, our team is dedicated to enhancing your home with efficient solutions, quality workmanship, and dependable results.
+                    At 2Brothers Handyman, we provide professional, affordable, and reliable handyman services tailored to Auckland residents. With years of experience across all trades, our team is dedicated to enhancing your home with efficient solutions, quality workmanship, and dependable results.
                 </p>
                 <div class="row highQulity-box-row overflow-hidden">
                     <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-6">
@@ -295,12 +456,11 @@
         <div class="container">
             <div class="row img-group-about-pageRow">
                 <div class="col-xxl-6 col-xl-6 col-lg-6">
-                    <img class="image27 img-animation-style4 reveal" src="assets/images/about-page/image27.jpg" alt="image27">
+                    <img class="image27 img-animation-style4 reveal" src="assets/images/home-page/door.jpg" alt="image27">
                 </div>
                 <div class="col-xxl-6 col-xl-6 col-lg-6 img-group-about-page">
-                    <img class="image28 img-animation-style2 reveal" src="assets/images/about-page/image28.jpg" alt="image28">
-                    <img class="image29 img-animation-style4 reveal" src="assets/images/about-page/image29.jpg"
-                        alt="image29">
+                   <img class="image27 img-animation-style4 reveal" src="assets/images/home-page/bath-pic.jpg" alt="image27">
+               
                 </div>
             </div>
             <h3 class="tackle">We're your trusted handyman service, here to tackle those home repairs and improvement
@@ -434,6 +594,8 @@
         </div>
     </div>
 </section> -->
+
+
 <section class="section-eight" id="services-page-section">
     <div class="container">
         <div class="quality-main about-qulity-main fade_down">
@@ -537,19 +699,7 @@
 </section>
 
 
-<!-- <div class="View-btn-sec">
-    <div class="container">
-        <div class="View-btn-sec-btn-main">
-            <a href="services.html" class="btn-main btn2">BOOK A SERVICE
-                <span class="arrow-section">
-                    <img class="arrow" src="assets/images/svg/right-arrow-svg.svg" alt="right-arrow-svg">
-                </span>
-                <div class="btn-box-left btn2"></div>
-                <div class="btn-box-right btn2"></div>
-            </a>
-        </div>
-    </div>
-</div> -->
+
 
     <!-- ====================================== Section Four ===================================== -->
 <section class="section-four" id="qoute">
@@ -608,7 +758,7 @@
                 </form>
             </div>
             <div class="col-xxl-6 col-xl-6 col-lg-6 position-relative request-qoute-img-main">
-                <img class="request-qoute-img" src="assets/images/get-qoute-page/request-qoute-img.png" alt="request-qoute-img">
+                <img class="request-qoute-img" src="assets/images/home-page/contact-image.png" alt="request-qoute-img">
             </div>
         </div>
     </div>
@@ -1000,10 +1150,9 @@
     <div class="container">
         <div class="row faq-sec-Row">
             <div class="col-xxl-6 col-xl-6 col-lg-6 installation-img-group">
-                <img class="installation-img1 img-animation-style4 reveal"
-                    src="assets/images/home-page/installation-img1.jpg" alt="installation-img1">
+                
                 <img class="installation-img2 img-animation-style2 reveal"
-                    src="assets/images/home-page/installation-img2.jpg" alt="installation-img2">
+                    src="assets/images/home-page/installation-img2.png" alt="installation-img2">
                 <div class="yerOfExperi">
                     <h2>12+</h2>
                     <p>Years of Experience</p>
@@ -1149,8 +1298,8 @@
                             </div>
                             <div>
                                 <p class="CallUs">Email Us</p>
-                                <a href="mailto:info@handymannz.com" class="CallUs-phone">
-                                    <p>info@handymannz.com</p>
+                                <a href="mailto:info@2Brothers Handyman.com" class="CallUs-phone">
+                                    <p>info@2Brothers Handyman.com</p>
                                 </a>
                             </div>
                         </div>
@@ -1290,8 +1439,8 @@
                         </div>
                         <div>
                             <p class="CallUs">Email Us</p>
-                            <a href="mailto:info@handymannz.com" class="CallUs-phone">
-                                <p>info@handymannz.com</p>
+                            <a href="mailto:info@2Brothers Handyman.com" class="CallUs-phone">
+                                <p>info@2Brothers Handyman.com</p>
                             </a>
                         </div>
                     </div>
@@ -1313,7 +1462,7 @@
         <div class="container">
             <div class="rights-reserved">
                 <h2>Copyright © 2025. All rights reserved by
-                    <a href="#header" target="_blank">Handymannz.</a>
+                    <a href="#header" target="_blank">2Brothers Handyman.</a>
                 </h2>
                 <div class="home-media-icon-main-head">
                     <a href="https://www.facebook.com/2brotherhandymanservices ">
@@ -1344,9 +1493,26 @@
     <button class="bottom-top-button"><img src="assets/images/svg/right-arrow-svg.svg" alt="arrow-up"></button>
     <!-- ====================================== Bottom To Top Button End ===================================== -->
     <!-- jQuery CDN -->
+
+    
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
 <!-- Bootstrap 5 Success Message Placeholder -->
+
+
+
+
+
+    <script src="assets/javascript/jquery.js"></script>
+    <script src="assets/javascript/bootstrap.min.js"></script>
+    <script src="assets/javascript/magnific-pop.min.js"></script>
+    <script src="assets/javascript/slick.min.js"></script>
+    <script src="assets/javascript/yt-video.js"></script>
+    <script src="assets/javascript/script.js"></script>
+
+
+    
+
 
 <script>
 $(document).ready(function () {
@@ -1429,12 +1595,9 @@ $(document).ready(function () {
 </script>
 
 
-    <script src="assets/javascript/jquery.js"></script>
-    <script src="assets/javascript/bootstrap.min.js"></script>
-    <script src="assets/javascript/magnific-pop.min.js"></script>
-    <script src="assets/javascript/slick.min.js"></script>
-    <script src="assets/javascript/yt-video.js"></script>
-    <script src="assets/javascript/script.js"></script>
+
+    
+
 </body>
 
 </html>
