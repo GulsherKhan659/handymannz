@@ -1338,7 +1338,7 @@
                     </div>
                 </div>
                 <div class="col-xxl-6 col-xl-6 col-lg-6">
-                    <form  action="https://formspree.io/f/meozkajo"
+                    <form id="contactform-handyman"  action="https://formspree.io/f/mvgqrkno"
   method="POST">
                         <p id="contactSuccessMsg" class="alert alert-success d-none mt-3">Your message has been sent successfully!</p>
 
@@ -1561,39 +1561,41 @@ $(document).ready(function () {
 });
 </script>
 <!-- Contact-Form -->
- <script>
-$(document).ready(function () {
-    $('form[action="https://formspree.io/f/meozkajo"]').on('submit', function (e) {
-        e.preventDefault();
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const form = document.getElementById("contactform-handyman");
+    const successMsg = document.getElementById("contactSuccessMsg");
 
-        const form = $(this);
-        const url = form.attr('action');
+    form.addEventListener("submit", function (e) {
+        e.preventDefault(); // Stop default form submission
 
-        $.ajax({
-            type: 'POST',
-            url: url,
-            data: form.serialize(),
-            dataType: 'json',
-            success: function () {
-                // Show success message
-                $('#contactSuccessMsg').removeClass('d-none');
+        const formData = new FormData(form);
 
-                // Reset form fields
-                form[0].reset();
-
-                // Hide success message after 5 seconds
-                setTimeout(function () {
-                    $('#contactSuccessMsg').addClass('d-none');
-                }, 5000);
-            },
-            error: function (xhr) {
-                alert("There was an error submitting the form.");
-                console.error(xhr.responseText);
+        fetch(form.action, {
+            method: "POST",
+            body: formData,
+            headers: {
+                'Accept': 'application/json'
             }
+        })
+        .then(response => {
+            if (response.ok) {
+                successMsg.classList.remove("d-none");
+                form.reset();
+            } else {
+                return response.json().then(data => {
+                    alert(data.error || "Submission failed. Try again.");
+                });
+            }
+        })
+        .catch(error => {
+            console.error("Form error:", error);
+            alert("Something went wrong. Please try again later.");
         });
     });
 });
 </script>
+
 
 
 
