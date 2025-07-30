@@ -827,7 +827,7 @@ header {
     pointer-events: none;
 }
 .services-slider-box:hover::before {
-    background: linear-gradient(180deg, rgba(241, 97, 34, 0.00) 0%, #4da000 100%);
+    /* background: linear-gradient(180deg, rgba(241, 97, 34, 0.00) 0%, #4da000 100%); */
 }
 .services-icon-box {
     position: absolute;
